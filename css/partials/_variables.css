@@ -1,0 +1,37 @@
+
+html,body {
+    margin: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100%;
+    font-family: var(--raleway-light);
+}
+
+.bg-cover {
+    background: var(--gradient-color);
+    height: 700px;
+}
+
+:root {
+    --pink-pale: rgb(252, 182, 187);
+    --salmon-pink: #fa8585;
+    --pink: #ec368d;
+    --blue: #51e5ff;
+    --indigo: #302387;
+    --title-color: #141313;
+    --text-color: #777777;
+    --border-color: #201f1f17;
+    --gradient-color: linear-gradient(90deg, var(--pink-pale) 50%, var(--salmon-pink) 100%);
+    --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
+    --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+
+
+    /* Font Family */
+    --montserrat-bold: 'Montserrat-Bold', sans-serif;
+    --montserrat-thin: 'Montserrat-thin', sans-serif;
+    --raleway: 'Raleway', sans-serif;
+    --raleway-light: 'Raleway-light', sans-serif;
+    --raleway-thin: 'Raleway-thin', sans-serif;
+    --raleway-extra: 'Raleway-extra', sans-serif;
+
+}

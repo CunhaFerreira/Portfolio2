@@ -1,0 +1,65 @@
+/* Buttons */
+button:focus,
+button:active
+button:hover
+.btn:active,
+.btn.active {
+    outline: 0px !important;
+    box-shadow: none !important;
+}
+
+.button {
+    padding: .8rem 2.2rem;
+    font: normal 16px/20px var(--raleway-light);
+    position: relative;
+    border: 1px solid var(--salmon-pink);
+    border-radius: 4px;
+}
+
+.button.primary-button {
+    background: var(--pink-pale);
+    background-clip: padding-box;
+    color: #fff;
+    box-shadow: 4px 3px 3px var(--salmon-pink);
+}
+
+.button.primary-button:hover {
+    background: #fff;
+    background-clip: padding-box;
+    color: var(--pink);
+    transition: background .6s ease;
+}
+
+/* Fonts */
+
+.main-title {
+    font: normal 49px/60px var(--montserrat-bold);
+    color: var(--blue);
+    text-shadow: 4px 3px 3px var(--pink);
+    letter-spacing: .8rem;
+}
+
+/* Navegation Fixed */
+.navbar-fixed {
+    position: fixed;
+    width: 100%;
+    top: -1px;
+    left: 0;right: 0;
+    background: white;
+    box-shadow: var(--box-shadow);
+    z-index: 999;
+    transition: background 2s ease;
+}
+
+.navbar-fixed .navbar .navbar-brand {
+    color: #fff!important;
+}
+
+.header-section .navbar-fixed .nav-item > a.nav-link,
+.navbar-fixed .dropdown-menu .dropdown-item {
+    color: var(--pink);
+}
+
+.navbar-fixed .dropdown-menu {
+    background: #fff!important;
+}

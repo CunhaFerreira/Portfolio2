@@ -1,0 +1,393 @@
+@import url(/css/fonts.css);
+
+@import url(./partials/_variables.css);
+
+@import url(./partials/_global.css);
+
+/* 
+* Header Section 
+*/
+.header-section .main-menu .navbar .navbar-brand {
+    font-size: 5rem;
+    color: var(--pink-pale);
+    text-shadow: 4px 3px 3px var(--pink);
+    font-family: var(--raleway);
+
+}
+
+.header-section .main-menu .navbar .navbar-brand>.thin {
+    font-family: var(--raleway-thin);
+    text-shadow: 3px 2px 2px var(--pink);
+}
+
+.header-section .main-menu .nav-item .nav-link,
+.dropdown-menu .dropdown-item {
+    text-transform: uppercase;
+    padding: .6rem;
+    color: #fff;
+    padding-bottom: 0;
+}
+
+.header-section .main-menu .dropdown-menu {
+    background: transparent;
+}
+
+.header-section .main-menu .dropdown-menu a:hover {
+    background: var(--salmon-pink);
+}
+
+.header-section .main-menu .navbar-nav a:hover {
+    color: var(--pink);
+}
+
+/* End Header Section */
+
+
+/*
+* Banner Section
+*/
+.site-main .banner-section .site-title h1 {
+    margin: 8rem 0 0;
+    font-size: 3rem;
+    font-family: var(--montserrat-bold);
+    color: #fff;
+    letter-spacing: .4rem;
+}
+
+.site-main .banner-section .site-title h2 {
+    font: normal 49px/60px var(--montserrat-thin);
+    color: #fff;
+    letter-spacing: 1.8rem;
+}
+
+.site-main .banner-section img {
+    margin: 3rem 0;
+    width: 20rem;
+    box-shadow: 20px 20px 0px var(--pink-pale);
+}
+
+/* End Banner Section */
+
+
+/*
+* About Section
+*/
+.about-section {
+    padding: 8rem 5rem;
+}
+
+.about-image>img {
+    padding: 3rem 0;
+    width: 90rem;
+}
+
+.about-section .main-title h2>span {
+    display: block;
+}
+
+.about-section .paragraph>p {
+    padding: .4rem 0;
+    font-family: var(--raleway-light);
+    color: var(--text-color);
+}
+
+/* End About Section */
+
+
+/*
+* Project Section
+*/
+.project-section {
+    padding: 4rem 0;
+}
+
+.project-section .button-group button {
+    background: transparent;
+    border: none;
+    color: var(--indigo);
+    font: normal bolder 16px/130px var(--raleway);
+}
+
+.project-section .button-group button:hover {
+    color: var(--salmon-pink);
+
+}
+
+.project-section .button-group button+button {
+    padding-left: 2rem;
+}
+
+.project-section .grid .our-project>.title h4 {
+    font-size: 25px;
+    line-height: 12px;
+}
+
+.project-section .grid .our-project .img a:hover img {
+    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+}
+
+/* End Project Section */
+
+
+/*
+* Skills Section
+*/
+.skill-section {
+    padding: 4rem 0;
+    margin-bottom: 4rem;
+}
+
+.skill-section .first-row .col-lg-4 {
+    display: flex;
+    justify-content: center;
+}
+
+
+.skill-section .first-row .col-lg-4>.single-skill {
+    border: 1px solid var(--border-color);
+    text-align: center;
+    padding: 1rem;
+    margin: .9rem 0;
+    width: 150px;
+    height: 120px;
+    cursor: pointer;
+    transition: transform .4s ease;
+}
+
+.skill-section .first-row .col-lg-4>.single-skill>i {
+    color: var(--salmon-pink);
+}
+
+.skill-section .first-row .col-lg-4>.single-skill:hover {
+    box-shadow: var(--box-shadow);
+    transform: scale(1.1);
+}
+
+.skill-section .experience-section {
+    padding-left: 1rem;
+}
+
+.skill-section .experience-section span {
+    display: block;
+}
+
+.skill-section .experience-section .years-section {
+    background: url(../img/years-bg.png) no-repeat 45px 20px;
+    padding: 2rem 0;
+    width: 40rem;
+    height: 18rem;
+    padding-left: 8rem;
+    position: relative;
+}
+
+.skill-section .experience-section .bg-panel {
+    position: absolute;
+    left: -190px;
+    top: 0%;
+    background: #e029290e;
+    width: 400px;
+    height: 400px;
+    margin-left: 340px;
+    z-index: -1;
+}
+
+.skill-section .experience-section .years-section .years {
+    font: normal 84px/40px var(--montserrat-bold);
+    color: var(--pink);
+    z-index: 2;
+}
+
+.skill-section .experience-section .years-section h2>span {
+    font: normal bold 25px/30px var(--raleway);
+    color: var(--indigo);
+}
+
+.skill-section .experience-section .call-section {
+    padding-left: 10rem;
+}
+
+/* End Skills Section */
+
+
+/*
+* Certification Section
+*/
+.certification-section {
+    padding: 4rem 5rem;
+
+}
+
+.certification-section .certificate-image {
+    padding: 4rem 0 4rem 0;
+    text-align: center;
+}
+
+.certification-section .certificate-image>img {
+    box-shadow: var(--box-shadow);
+}
+
+.certification-section .certificate-image>img:hover {
+    transform: scale(1.5);
+}
+
+/* End Certification Section */
+
+
+/*
+* Contact Section
+*/
+.contact-section .message {
+    background: var(--gradient-color);
+    padding: 10rem 0;
+    margin: 3rem auto;
+}
+
+.contact-section .message .contact-title h4 {
+    font: normal 35px/30px var(--raleway);
+    color: #fff;
+}
+
+.contact-section .message .contact-title p {
+    color: var(--text-color);
+    padding: 1rem 4rem;
+}
+
+.contact-section .message form .input-textbox input {
+    width: 400px;
+    padding: 1.5rem 1rem;
+    border: 1px solid #fff;
+    background: transparent;
+    font: normal 17px/20px var(--raleway);
+    color: #777777;
+}
+
+.contact-section .message form .input-textbox input::placeholder {
+    color: #fff;
+}
+
+/* End Contact Section */
+
+
+/*
+* Footer Section
+*/
+footer.footer-section {
+    padding: 5rem 0 0;
+}
+
+footer.footer-section .footer-brand {
+    font-size: 6rem;
+    color: #fff;
+    text-shadow: 4px 3px 3px var(--pink);
+    font-family: var(--raleway);
+    text-decoration: none;
+}
+
+footer.footer-section .footer-brand>.thin {
+    font-family: var(--raleway-thin);
+    text-shadow: 3px 2px 2px var(--pink);
+}
+
+
+footer.footer-section .social h5 {
+    font-size: 1.5rem;
+}
+
+footer.footer-section .social a > i {
+    padding: 2rem;
+    color: var(--border-color);
+}
+
+footer.footer-section .social a:hover > i {
+    color: var(--salmon-pink);
+}
+
+footer .para {
+    margin-bottom: 0;
+    color: var(--text-color);
+}
+
+.footer-section .square-hex1,
+.square-hex2,
+.square-hex3,
+.square-hex4,
+.square-hex5 {
+    color: #fff;
+    text-transform: uppercase;
+    font-family: var(--raleway);
+}
+
+.footer-section .square-hex1 {
+    background: var(--pink-pale);
+}
+
+.footer-section .square-hex2 {
+    background: var(--salmon-pink);
+}
+
+.footer-section .square-hex3 {
+    background: var(--pink);
+}
+
+.footer-section .square-hex4 {
+    background: var(--blue);
+}
+
+.footer-section .square-hex5 {
+    background: var(--indigo);
+}
+
+/* End Footer Section */
+
+/* Image Hover Effect from https://miketricking.github.io/bootstrap-image-hover/*/
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+}
+
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 80%;
+    height: 80%;
+    left: 10%;
+    top: 10%;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+}
+
+.hovereffect:hover img {
+    filter: brightness(0.6);
+    -webkit-filter: brightness(0.3);
+}
+
+.hovereffect h2 {
+    text-transform: uppercase;
+    font-size: 2rem;
+    background-color: transparent;
+    color: #FFF;
+    padding: 1em 0;
+}
+
+.hovereffect p {
+    color: #FFF;
+    padding: 1em 0;
+    font-size: 1.3rem;
+}
+    
+    

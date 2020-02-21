@@ -17,12 +17,7 @@ $(document).ready(function () {
 
     $('.project-section .button-group #btn1').trigger('click');
 
-    // Popup Section
-    $('.project-section .grid .test-popup-link').magnificPopup({
-        type: 'image',
-        gallery: { enabled: true }
-    });
-
+   
     //Sticky Navegation Menu
     let nav_offset_top = $('.header-section').height() + 50;
   

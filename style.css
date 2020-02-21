@@ -100,7 +100,7 @@ button:active button:hover .btn:active,
 * Main Fonts 
 */
 .main-title {
-    font: normal 49px/60px var(--montserrat-bold);
+    font: normal 50px/60px var(--montserrat-bold);
     color: var(--blue);
     text-shadow: 4px 3px 3px var(--pink);
     letter-spacing: .8rem;
@@ -402,6 +402,15 @@ button:active button:hover .btn:active,
     transform: scale(1.5);
 }
 
+.certification-section .certificate-image>.title h4 {
+    padding-top: 10%;
+    font-size: 24px;
+    line-height: 12px;
+}
+
+.certification-section .certificate-image>.title span {
+    font-size: 22px;
+}
 /* End Certification Section */
 
 
@@ -410,30 +419,44 @@ button:active button:hover .btn:active,
 */
 .contact-section .message {
     background: var(--gradient-color);
-    padding: 10rem 0;
-    margin: 3rem auto;
+    padding: 5rem 0 5rem;
 }
 
 .contact-section .message .contact-title h4 {
-    font: normal 35px/30px var(--raleway);
+    font: normal 45px/30px var(--raleway);
     color: #fff;
 }
 
-.contact-section .message .contact-title p {
+.contact-section .message .contact-title p.para {
+    font: normal 35px/50px var(--raleway-thin);
     color: var(--text-color);
-    padding: 1rem 4rem;
+    padding-top: 2rem;
 }
 
-.contact-section .message form .input-textbox input {
+.contact-section .message .contact-title p {
+    font: normal 25px var(--raleway-thin);
+    color: var(--text-color);
+}
+
+.contact-section .message form .input-textbox input{
     width: 400px;
     padding: 1.5rem 1rem;
     border: 1px solid #fff;
     background: transparent;
-    font: normal 17px/20px var(--raleway);
+    font: normal 17px/20px var(--raleway-light);
     color: #777777;
 }
 
-.contact-section .message form .input-textbox input::placeholder {
+.contact-section .message form .input-textbox textarea {
+    padding: 1rem 1rem;
+    border: 1px solid #fff;
+    background: transparent;
+    font: normal 17px/20px var(--raleway-light);
+    color: #777777;
+}
+
+.contact-section .message form .input-textbox input::placeholder,
+.contact-section .message form .input-textbox textarea::placeholder {
     color: #fff;
 }
 

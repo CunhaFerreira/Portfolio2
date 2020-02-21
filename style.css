@@ -1,3 +1,7 @@
+/******** Global ********/
+/*
+* Fonts
+*/
 @font-face {
     font-family: 'Montserrat-Bold';
     src: url(/fonts/Montserrat/Montserrat-Bold.ttf);
@@ -12,6 +16,7 @@
     font-family: 'Raleway';
     src: url(/fonts/Raleway/Raleway-Medium.ttf);
 }
+
 @font-face {
     font-family: 'Raleway-light';
     src: url(/fonts/Raleway/Raleway-Light.ttf);
@@ -22,24 +27,17 @@
     src: url(/fonts/Raleway/Raleway-Thin.ttf);
 }
 
-@font-face {
-    font-family: 'Raleway-extra';
-    src: url(/fonts/Raleway/Raleway-ExtraLight.ttf);
-}
 
-
-
-html,body {
+/*
+* Standars
+*/
+html,
+body {
     margin: 0;
     box-sizing: border-box;
     width: 100%;
     height: 100%;
     font-family: var(--raleway-light);
-}
-
-.bg-cover {
-    background: var(--gradient-color);
-    height: 700px;
 }
 
 :root {
@@ -52,27 +50,24 @@ html,body {
     --text-color: #777777;
     --border-color: #201f1f17;
     --gradient-color: linear-gradient(90deg, var(--pink-pale) 50%, var(--salmon-pink) 100%);
-    --shadow-color: 0px 10px 30px rgba(118,85,225,0.3);
-    --box-shadow: 0px 10px 30px rgba(57,56,61,0.205);
+    --shadow-color: 0px 10px 30px rgba(118, 85, 225, 0.3);
+    --box-shadow: 0px 10px 30px rgba(57, 56, 61, 0.205);
 
 
-    /* Font Family */
+    /******* Font Family *******/
     --montserrat-bold: 'Montserrat-Bold', sans-serif;
     --montserrat-thin: 'Montserrat-thin', sans-serif;
     --raleway: 'Raleway', sans-serif;
     --raleway-light: 'Raleway-light', sans-serif;
     --raleway-thin: 'Raleway-thin', sans-serif;
-    --raleway-extra: 'Raleway-extra', sans-serif;
-
 }
 
 
-
-/* Buttons */
+/* 
+* Buttons Standars 
+*/
 button:focus,
-button:active
-button:hover
-.btn:active,
+button:active button:hover .btn:active,
 .btn.active {
     outline: 0px !important;
     box-shadow: none !important;
@@ -100,8 +95,10 @@ button:hover
     transition: background .6s ease;
 }
 
-/* Fonts */
 
+/* 
+* Main Fonts 
+*/
 .main-title {
     font: normal 49px/60px var(--montserrat-bold);
     color: var(--blue);
@@ -109,12 +106,16 @@ button:hover
     letter-spacing: .8rem;
 }
 
-/* Navegation Fixed */
+
+/* 
+* Navegation Fixed 
+*/
 .navbar-fixed {
     position: fixed;
     width: 100%;
     top: -1px;
-    left: 0;right: 0;
+    left: 0;
+    right: 0;
     background: white;
     box-shadow: var(--box-shadow);
     z-index: 999;
@@ -122,30 +123,35 @@ button:hover
 }
 
 .navbar-fixed .navbar .navbar-brand {
-    color: #fff!important;
+    color: #fff !important;
 }
 
-.header-section .navbar-fixed .nav-item > a.nav-link,
+.header-section .navbar-fixed .nav-item>a.nav-link,
 .navbar-fixed .dropdown-menu .dropdown-item {
     color: var(--pink);
 }
 
 .navbar-fixed .dropdown-menu {
-    background: #fff!important;
+    background: #fff !important;
 }
 
+/******** End Global ********/
 
 
 
 /* 
 * Header Section 
 */
+.bg-cover {
+    background: var(--gradient-color);
+    height: 700px;
+}
+
 .header-section .main-menu .navbar .navbar-brand {
     font-size: 5rem;
     color: var(--pink-pale);
     text-shadow: 4px 3px 3px var(--pink);
     font-family: var(--raleway);
-
 }
 
 .header-section .main-menu .navbar .navbar-brand>.thin {
@@ -243,7 +249,6 @@ button:hover
 
 .project-section .button-group button:hover {
     color: var(--salmon-pink);
-
 }
 
 .project-section .button-group button+button {
@@ -255,9 +260,44 @@ button:hover
     line-height: 12px;
 }
 
-.project-section .grid .our-project .img a:hover img {
-    filter: brightness(1.1) drop-shadow(1px 8px 30px #b1afaf);
+.project-section .hovereffect img {
+    box-shadow: var(--box-shadow)
 }
+
+/* Image Hover Effect from https://miketricking.github.io/bootstrap-image-hover/*/
+.hovereffect {
+    width: 100%;
+    height: 100%;
+    float: left;
+    /* overflow: hidden; It's hidden img shadow*/
+    position: relative;
+    cursor: pointer;
+}
+
+.hovereffect .overlay {
+    position: absolute;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: scale(0, 1);
+    -ms-transform: scale(0, 1);
+    transform: scale(0, 1);
+}
+
+.hovereffect:hover .overlay {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    transform: scale(1);
+}
+
+.hovereffect:hover img {
+    filter: brightness(0.8);
+}
+
 
 /* End Project Section */
 
@@ -347,7 +387,6 @@ button:hover
 */
 .certification-section {
     padding: 4rem 5rem;
-
 }
 
 .certification-section .certificate-image {
@@ -426,12 +465,12 @@ footer.footer-section .social h5 {
     font-size: 1.5rem;
 }
 
-footer.footer-section .social a > i {
+footer.footer-section .social a>i {
     padding: 2rem;
     color: var(--border-color);
 }
 
-footer.footer-section .social a:hover > i {
+footer.footer-section .social a:hover>i {
     color: var(--salmon-pink);
 }
 
@@ -471,56 +510,3 @@ footer .para {
 }
 
 /* End Footer Section */
-
-/* Image Hover Effect from https://miketricking.github.io/bootstrap-image-hover/*/
-.hovereffect {
-    width: 100%;
-    height: 100%;
-    float: left;
-    overflow: hidden;
-    position: relative;
-    cursor: pointer;
-}
-
-.hovereffect .overlay {
-    position: absolute;
-    overflow: hidden;
-    width: 80%;
-    height: 80%;
-    left: 10%;
-    top: 10%;
-    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-    transition: opacity 0.35s, transform 0.35s;
-    -webkit-transform: scale(0, 1);
-    -ms-transform: scale(0, 1);
-    transform: scale(0, 1);
-}
-
-.hovereffect:hover .overlay {
-    opacity: 1;
-    filter: alpha(opacity=100);
-    -webkit-transform: scale(1);
-    -ms-transform: scale(1);
-    transform: scale(1);
-}
-
-.hovereffect:hover img {
-    filter: brightness(0.6);
-    -webkit-filter: brightness(0.3);
-}
-
-.hovereffect h2 {
-    text-transform: uppercase;
-    font-size: 2rem;
-    background-color: transparent;
-    color: #FFF;
-    padding: 1em 0;
-}
-
-.hovereffect p {
-    color: #FFF;
-    padding: 1em 0;
-    font-size: 1.3rem;
-}
-    
-    

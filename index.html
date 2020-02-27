@@ -25,9 +25,9 @@
     <div class="bg-cover">
         <header class="header-section">
             <div class="main-menu">
-                <nav class="navbar navbar-expand-lg navbar-light">
+                <nav class="navbar navbar-expand-lg navbar-light ">
                     <div class="container">
-                        <a href="#" class="navbar-brand"><b>P</b><span class="thin">a</span><b>ola</b></a>
+                        <a href="#" class="navbar-brand">paola</a>
                         <button class="navbar-toggler" type="button" data-toggle="collapse"
                             data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
                             aria-label="Toggle navigation">
@@ -40,7 +40,7 @@
                                     <a class="nav-link" href="#">Home<span class="sr-only">(current)</span></a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">About</a>
+                                    <a class="nav-link" href="#about">About</a>
                                 </li>
                                 <li class="nav-item dropdown">
                                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink"
@@ -48,7 +48,7 @@
                                         Portfolio
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Work</a>
+                                        <a class="dropdown-item" href="#work">Work</a>
                                         <a class="dropdown-item" href="design.html">Design Evolution</a>
                                     </div>
                                 </li>
@@ -58,12 +58,12 @@
                                         Knowledge
                                     </a>
                                     <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                        <a class="dropdown-item" href="#">Skills</a>
-                                        <a class="dropdown-item" href="#">Certificates</a>
+                                        <a class="dropdown-item" href="#skills">Skills</a>
+                                        <a class="dropdown-item" href="#certificates">Certificates</a>
                                     </div>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="nav-link" href="#">Contact</a>
+                                    <a class="nav-link" href="#contact">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -89,12 +89,13 @@
                             <h2 class="greeting text-uppercase">Portfolio</h2>
                             <div class="banner-buttons">
                                 <div class="d-flex flex-row flew-wrap">
+                                    <a href="#">
                                     <button class="btn button primary-button mr-4 text-uppercase">
-                                        Hire me
-                                    </button>
-                                    <button class="btn button primary-button mr-4 text-uppercase">
-                                        Get cv
-                                    </button>
+                                        hire me
+                                    </button></a>
+                                    <a href="#"><button href="#work" class="btn button primary-button mr-4 text-uppercase">
+                                        get cv
+                                    </button></a>
                                 </div>
                             </div>
                         </div>
@@ -114,7 +115,7 @@
 
     <!-- =========================== About Section =========================== -->
 
-    <section class="about-section">
+    <section class="about-section" id="about">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 col-md-12">
@@ -148,7 +149,7 @@
 
     <!-- =========================== Project Section =========================== -->
 
-    <section class="project-section">
+    <section class="project-section offset" id="work">
         <div class="container">
             <div class="project-title pb-5">
                 <h1 class="text-uppercase main-title">Projects</h1>
@@ -267,7 +268,7 @@
 
     <!-- ======================== Skills Section ======================== -->
 
-    <section class="skill-section">
+    <section class="skill-section offset" id="skills">
         <div class="container">
             <div class="project-title pb-5">
                 <h1 class="text-uppercase main-title">Skills</h1>
@@ -344,7 +345,7 @@
 
     <!-- ======================== Certification Section ======================== -->
 
-    <section class="certification-section">
+    <section class="certification-section offset" id="certificates">
         <div class="container">
             <div class="project-title pb-5">
                 <h1 class="text-uppercase main-title">Certificates</h1>
@@ -379,7 +380,7 @@
 
     <!-- ======================== Contact Section ======================== -->
 
-    <section class="contact-section">
+    <section class="contact-section offset" id="contact">
         <div class="container message">
             <div class="row">
                 <div class="col-lg-12 text-center contact-title">
@@ -393,7 +394,8 @@
                     <div class="row form-group">
                         <div class="input-textbox">
                             <input type="text" id="txtemail" class="form-control mb-4" placeholder="Email">
-                            <textarea class="form-control mb-4" id="exampleFormControlTextarea1" rows="3" placeholder="Leave a message"></textarea>
+                            <textarea class="form-control mb-4" id="exampleFormControlTextarea1" rows="3"
+                                placeholder="Leave a message"></textarea>
                             <div class="btn-submit">
                                 <button type="submit" class="btn button primary-button float-right">Send</button>
                             </div>
@@ -412,7 +414,7 @@
     <footer class="footer-section">
         <div class="container">
             <div class="site-logo text-center py-4">
-                <a href="#" class="footer-brand"><b>P</b><span class="thin">a</span><b>ola</b></a>
+                <a href="#" class="footer-brand">paola</a>
             </div>
             <div class="social text-center">
                 <h5 class="text-uppercase">Follow me</h5>

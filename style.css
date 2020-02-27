@@ -27,6 +27,11 @@
     src: url(/fonts/Raleway/Raleway-Thin.ttf);
 }
 
+@font-face {
+    font-family: 'Sofia';
+    src: url(/fonts/Sofia/Sofia-Regular.ttf);
+}
+
 
 /*
 * Standars
@@ -60,6 +65,7 @@ body {
     --raleway: 'Raleway', sans-serif;
     --raleway-light: 'Raleway-light', sans-serif;
     --raleway-thin: 'Raleway-thin', sans-serif;
+    --sofia: 'Sofia', sans-serif;
 }
 
 
@@ -75,7 +81,7 @@ button:active button:hover .btn:active,
 
 .button {
     padding: .8rem 2.2rem;
-    font: normal 16px/20px var(--raleway-light);
+    font: normal 16px/20px var(--raleway);
     position: relative;
     border: 1px solid var(--salmon-pink);
     border-radius: 4px;
@@ -110,7 +116,8 @@ button:active button:hover .btn:active,
 /* 
 * Navegation Fixed 
 */
-.navbar-fixed {
+.navbar-fixed,
+.navbar-white {
     position: fixed;
     width: 100%;
     top: -1px;
@@ -122,17 +129,28 @@ button:active button:hover .btn:active,
     transition: background 2s ease;
 }
 
-.navbar-fixed .navbar .navbar-brand {
+.navbar-fixed .navbar-brand,
+.navbar-white .navbar-brand {
     color: #fff !important;
 }
 
 .header-section .navbar-fixed .nav-item>a.nav-link,
-.navbar-fixed .dropdown-menu .dropdown-item {
+.navbar-fixed .dropdown-menu .dropdown-item,
+.header-section .navbar-white .nav-item>a.nav-link,
+.navbar-white .dropdown-menu .dropdown-item {
     color: var(--pink);
 }
 
-.navbar-fixed .dropdown-menu {
+.navbar-fixed .dropdown-menu,
+.navbar-white .dropdown-menu  {
     background: #fff !important;
+}
+
+.offset:before {
+    display: block;
+    content: '';
+    height: 4rem;
+    margin-top: 4rem;
 }
 
 /******** End Global ********/
@@ -151,12 +169,7 @@ button:active button:hover .btn:active,
     font-size: 5rem;
     color: var(--pink-pale);
     text-shadow: 4px 3px 3px var(--pink);
-    font-family: var(--raleway);
-}
-
-.header-section .main-menu .navbar .navbar-brand>.thin {
-    font-family: var(--raleway-thin);
-    text-shadow: 3px 2px 2px var(--pink);
+    font-family: var(--sofia);
 }
 
 .header-section .main-menu .nav-item .nav-link,
@@ -211,8 +224,8 @@ button:active button:hover .btn:active,
 /*
 * About Section
 */
-.about-section {
-    padding: 8rem 5rem;
+.about-section{
+    padding: 8rem 0 0 5rem;
 }
 
 .about-image>img {
@@ -226,7 +239,6 @@ button:active button:hover .btn:active,
 
 .about-section .paragraph>p {
     padding: .4rem 0;
-    font-family: var(--raleway-light);
     color: var(--text-color);
 }
 
@@ -237,8 +249,9 @@ button:active button:hover .btn:active,
 * Project Section
 */
 .project-section {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
 }
+
 
 .project-section .button-group button {
     background: transparent;
@@ -306,7 +319,7 @@ button:active button:hover .btn:active,
 * Skills Section
 */
 .skill-section {
-    padding: 4rem 0;
+    padding: 4rem 0 0;
     margin-bottom: 4rem;
 }
 
@@ -386,7 +399,7 @@ button:active button:hover .btn:active,
 * Certification Section
 */
 .certification-section {
-    padding: 4rem 5rem;
+    padding: 4rem 0 0;
 }
 
 .certification-section .certificate-image {
@@ -417,6 +430,9 @@ button:active button:hover .btn:active,
 /*
 * Contact Section
 */
+.contact-section {
+    padding: 3rem 0 0 0;
+}
 .contact-section .message {
     background: var(--gradient-color);
     padding: 5rem 0 5rem;
@@ -443,7 +459,7 @@ button:active button:hover .btn:active,
     padding: 1.5rem 1rem;
     border: 1px solid #fff;
     background: transparent;
-    font: normal 17px/20px var(--raleway-light);
+    font: normal 17px/20px;
     color: #777777;
 }
 
@@ -451,7 +467,7 @@ button:active button:hover .btn:active,
     padding: 1rem 1rem;
     border: 1px solid #fff;
     background: transparent;
-    font: normal 17px/20px var(--raleway-light);
+    font: normal 17px/20px;
     color: #777777;
 }
 
@@ -467,20 +483,15 @@ button:active button:hover .btn:active,
 * Footer Section
 */
 footer.footer-section {
-    padding: 5rem 0 0;
+    padding: 4rem 0 0;
 }
 
 footer.footer-section .footer-brand {
     font-size: 6rem;
     color: #fff;
     text-shadow: 4px 3px 3px var(--pink);
-    font-family: var(--raleway);
+    font-family: var(--sofia);
     text-decoration: none;
-}
-
-footer.footer-section .footer-brand>.thin {
-    font-family: var(--raleway-thin);
-    text-shadow: 3px 2px 2px var(--pink);
 }
 
 
@@ -533,3 +544,23 @@ footer .para {
 }
 
 /* End Footer Section */
+
+
+/*
+* Design.html Page
+*/
+section.evolution {
+    padding: 5rem;
+}
+
+section.evolution .design-img{
+    height: 600px;
+    width: 100%;
+    overflow: auto;
+    box-shadow: var(--box-shadow);
+}
+
+section.evolution a {
+    text-decoration: none;
+}
+

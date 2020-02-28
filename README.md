@@ -1,7 +1,7 @@
 # [LIVE DEMO](https://cunhaferreira.github.io/Test_v0.1.io/)
 ## Test version 0.1 
 
->*Not working fonts through fonts file*
+>*working fonts file*
 
 
 

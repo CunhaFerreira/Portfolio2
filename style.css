@@ -153,6 +153,10 @@ button:active button:hover .btn:active,
     margin-top: 4rem;
 }
 
+b.bold {
+    font-family: var(--raleway);
+}
+
 /******** End Global ********/
 
 
@@ -213,9 +217,7 @@ button:active button:hover .btn:active,
 }
 
 .site-main .banner-section img {
-    margin: 3rem 0;
-    width: 20rem;
-    box-shadow: 20px 20px 0px var(--pink-pale);
+    width: 100%;
 }
 
 /* End Banner Section */
@@ -274,7 +276,7 @@ button:active button:hover .btn:active,
 }
 
 .project-section .hovereffect img {
-    box-shadow: var(--box-shadow)
+    box-shadow: var(--box-shadow);
 }
 
 /* Image Hover Effect from https://miketricking.github.io/bootstrap-image-hover/*/
@@ -308,7 +310,7 @@ button:active button:hover .btn:active,
 }
 
 .hovereffect:hover img {
-    filter: brightness(0.8);
+    filter: brightness(.8);
 }
 
 
@@ -331,22 +333,18 @@ button:active button:hover .btn:active,
 
 .skill-section .first-row .col-lg-4>.single-skill {
     border: 1px solid var(--border-color);
+    box-shadow: var(--box-shadow);
     text-align: center;
     padding: 1rem;
     margin: .9rem 0;
     width: 150px;
     height: 120px;
-    cursor: pointer;
     transition: transform .4s ease;
 }
 
-.skill-section .first-row .col-lg-4>.single-skill>i {
+.skill-section .first-row .col-lg-4>.single-skill>i,
+.skill-section .experience-section .call-section i {
     color: var(--salmon-pink);
-}
-
-.skill-section .first-row .col-lg-4>.single-skill:hover {
-    box-shadow: var(--box-shadow);
-    transform: scale(1.1);
 }
 
 .skill-section .experience-section {
@@ -357,11 +355,27 @@ button:active button:hover .btn:active,
     display: block;
 }
 
+.skill-section .experience-section .years-section .years {
+    font: normal 84px/40px var(--montserrat-bold);
+    color: var(--pink);
+    z-index: 2;
+}
+
+.skill-section .experience-section .years-section h2>span {
+    font: normal bold 25px/30px var(--raleway);
+    color: var(--indigo);
+}
+
+.skill-section .experience-section .call-section {
+    padding-left: 8rem ;
+}
+
+
 .skill-section .experience-section .years-section {
     background: url(../img/years-bg.png) no-repeat 45px 20px;
     padding: 2rem 0;
     width: 40rem;
-    height: 18rem;
+    height: 15rem;
     padding-left: 8rem;
     position: relative;
 }
@@ -377,20 +391,8 @@ button:active button:hover .btn:active,
     z-index: -1;
 }
 
-.skill-section .experience-section .years-section .years {
-    font: normal 84px/40px var(--montserrat-bold);
-    color: var(--pink);
-    z-index: 2;
-}
 
-.skill-section .experience-section .years-section h2>span {
-    font: normal bold 25px/30px var(--raleway);
-    color: var(--indigo);
-}
 
-.skill-section .experience-section .call-section {
-    padding-left: 10rem;
-}
 
 /* End Skills Section */
 
@@ -441,38 +443,43 @@ button:active button:hover .btn:active,
 .contact-section .message .contact-title h4 {
     font: normal 45px/30px var(--raleway);
     color: #fff;
+    padding-bottom: 2rem;
 }
 
-.contact-section .message .contact-title p.para {
-    font: normal 35px/50px var(--raleway-thin);
+.contact-section .message .contact-title span {
+    display: block;
+    font: normal 25px/0px var(--raleway-thin);
     color: var(--text-color);
     padding-top: 2rem;
 }
 
-.contact-section .message .contact-title p {
-    font: normal 25px var(--raleway-thin);
+.contact-section .email {
+    padding: 3rem 0;
+}
+
+.contact-section .email i {
+    color: var(--salmon-pink);
+    font-size: 1.4rem;
+}
+
+.contact-section .email span {
+    font-family: var(--raleway-thin);
     color: var(--text-color);
+    font-size: 25px;
 }
 
-.contact-section .message form .input-textbox input{
-    width: 400px;
-    padding: 1.5rem 1rem;
-    border: 1px solid #fff;
-    background: transparent;
-    font: normal 17px/20px;
-    color: #777777;
+.contact-section .social h5 {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    font-family: var(--raleway-thin);
 }
 
-.contact-section .message form .input-textbox textarea {
-    padding: 1rem 1rem;
-    border: 1px solid #fff;
-    background: transparent;
-    font: normal 17px/20px;
-    color: #777777;
+.contact-section .social a>i {
+    padding: 2rem;
+    color: var(--salmon-pink);
 }
 
-.contact-section .message form .input-textbox input::placeholder,
-.contact-section .message form .input-textbox textarea::placeholder {
+.contact-section .social a:hover>i {
     color: #fff;
 }
 
@@ -544,6 +551,13 @@ footer .para {
 }
 
 /* End Footer Section */
+#project5 img {
+    
+}
+
+#project5 img:hover {
+    transform: scale(1.1);
+}
 
 
 /*

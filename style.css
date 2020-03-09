@@ -89,22 +89,21 @@ button:active button:hover .btn:active,
 }
 
 .button.primary-button {
-    background: var(--pink-pale);
-    background-clip: padding-box;
-    color: #fff;
-    box-shadow: 4px 3px 3px var(--salmon-pink);
-}
-
-.button.primary-button:hover {
     background: #fff;
     background-clip: padding-box;
     color: var(--pink);
+    box-shadow: 3px 3px 5px var(--salmon-pink);
+}
+
+.button.primary-button:hover {
+    background: var(--pink-pale);
+    background-clip: padding-box;
     transition: background .6s ease;
 }
 
 
 /* 
-* Main Fonts 
+* Main Title
 */
 .main-title {
     font: normal 50px/60px var(--montserrat-bold);
@@ -130,11 +129,6 @@ button:active button:hover .btn:active,
     transition: background 2s ease;
 }
 
-.navbar-fixed .navbar-brand,
-.navbar-white .navbar-brand {
-    color: #fff !important;
-}
-
 .header-section .navbar-fixed .nav-item>a.nav-link,
 .navbar-fixed .dropdown-menu .dropdown-item,
 .header-section .navbar-white .nav-item>a.nav-link,
@@ -157,7 +151,6 @@ button:active button:hover .btn:active,
 b.bold {
     font-family: var(--raleway);
 }
-
 /******** End Global ********/
 
 
@@ -166,7 +159,6 @@ b.bold {
 */
 .bg-cover {
     background: #fff;
-    height: 700px;
 }
 
 .bg-nav {
@@ -178,9 +170,8 @@ b.bold {
 }
 
 .header-section .main-menu .navbar .navbar-brand {
-    font-size: 3.5rem;
-    color: #fff;
-    text-shadow: 4px 3px 3px var(--pink);
+    font-size: 3rem;
+    color: var(--pink);
     font-family: var(--sofia);
 }
 
@@ -227,33 +218,32 @@ b.bold {
 .header-section .main-menu .dropdown-menu a:hover {
     background: #fff;
 }
-
-.header-section .main-menu .navbar-nav a:hover {
-    color: var(--pink);
-}
-
 /* End Header Section */
 
 
 /*
 * Banner Section
 */
+.site-main .banner-section {
+    padding: 2rem 0 2rem 0;
+}
+
 .site-main .banner-section .site-title h1 {
-    margin: 8rem 0 0;
-    font-size: 3rem;
-    font-family: var(--montserrat-bold);
-    color: var(--text-color);
-    letter-spacing: .4rem;
+    margin: 11rem 0 0;
+    font-size: 4rem;
+    font-family: var(--sofia);
+    color: var(--indigo);
 }
 
 .site-main .banner-section .site-title h2 {
     font: normal 49px/60px var(--montserrat-thin);
-    color: var(--text-color);
-    letter-spacing: 1.8rem;
+    color: var(--indigo);
+    letter-spacing: 1rem;
 }
 
 .site-main .banner-section img {
-    width: 100%;
+   width: 60%;
+   margin-top: 2rem;
 }
 /* End Banner Section */
 
@@ -273,7 +263,6 @@ b.bold {
     padding: .4rem 0;
     color: var(--text-color);
 }
-
 /* End About Section */
 
 
@@ -284,12 +273,11 @@ b.bold {
     padding: 4rem 0 0;
 }
 
-
 .project-section .button-group button {
     background: transparent;
     border: none;
     color: var(--title-color);
-    font: normal bolder 16px/130px var(--raleway);
+    font: normal bolder 16px/110px var(--raleway);
 }
 
 .project-section .button-group button:hover {
@@ -298,11 +286,6 @@ b.bold {
 
 .project-section .button-group button+button {
     padding-left: 2rem;
-}
-
-.project-section .grid .our-project>.title h4 {
-    font-size: 25px;
-    line-height: 12px;
 }
 
 .project-section .hovereffect img {
@@ -314,7 +297,6 @@ b.bold {
     width: 100%;
     height: 100%;
     float: left;
-    /* overflow: hidden; It's hidden img shadow*/
     position: relative;
     cursor: pointer;
 }
@@ -342,8 +324,6 @@ b.bold {
 .hovereffect:hover img {
     filter: brightness(.8);
 }
-
-
 /* End Project Section */
 
 
@@ -406,7 +386,7 @@ b.bold {
 }
 
 .skill-section .experience-section .years-section {
-    background: url(./img/year-bg.png) no-repeat 45px 10px;
+    background: url(./img/bg-03.png) no-repeat 45px 10px;
     padding: 2rem 0;
     width: 30rem;
     height: 12rem;
@@ -424,7 +404,6 @@ b.bold {
     margin-left: 340px;
     z-index: -1;
 }
-
 /* End Skills Section */
 
 
@@ -436,7 +415,7 @@ b.bold {
 }
 
 .certification-section .certificate-image {
-    padding: 4rem 0 4rem 0;
+    padding: 4rem 0 0;
     text-align: center;
 }
 
@@ -444,12 +423,12 @@ b.bold {
     box-shadow: var(--box-shadow);
 }
 
-.certification-section .certificate-image>img:hover {
-    transform: scale(1.5);
+.certification-section .scale:hover {
+    transform: scale(1.3);
+    padding-bottom: 3%;
 }
 
-.certification-section .certificate-image>.title h4 {
-    padding-top: 10%;
+.certification-section .certificate-image>.title h4 {  
     font-size: 24px;
     line-height: 12px;
 }
@@ -458,6 +437,9 @@ b.bold {
     font-size: 22px;
 }
 
+.certification-section .certificate-image>.title span a {
+    text-decoration: none;
+}
 /* End Certification Section */
 
 
@@ -517,7 +499,6 @@ b.bold {
 .contact-section .social a:hover>i {
     color: #fff;
 }
-
 /* End Contact Section */
 
 
@@ -529,9 +510,8 @@ footer.footer-section {
 }
 
 footer.footer-section .footer-brand {
-    font-size: 3.5rem;
-    color: #fff;
-    text-shadow: 4px 3px 3px var(--pink);
+    font-size: 3rem;
+    color: var(--pink);
     font-family: var(--sofia);
     text-decoration: none;
 }
@@ -582,8 +562,10 @@ footer .para {
 }
 
 /* End Footer Section */
-#project5 img {}
 
+/*
+* Modal
+*/
 #project5 img:hover {
     transform: scale(1.1);
 }

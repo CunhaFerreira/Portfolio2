@@ -37,14 +37,19 @@
         width: 50%;
     }
 
+    .certification-section .scale:hover {
+        transform: none;
+    }
+
     .certification-section .title h4,
     .contact-section .contact-title span {
-        font-size: 18px!important;
-        line-height: 1.5rem!important;
+        font-size: 18px !important;
+        line-height: 1.5rem !important;
     }
+
     .certification-section .title span.text-secondary {
-        font-size: 16px!important;
-        line-height: 0!important;
+        font-size: 16px !important;
+        line-height: 0 !important;
     }
 
     .contact-section .message .contact-title h4 {
@@ -57,13 +62,15 @@
         margin: 3.5rem 0;
         line-height: 1.5rem;
     }
+
     .contact-section .email span {
         font-size: 18px;
     }
-    .contact-section .social a i{
-       margin: 1.8rem 0 0;
+
+    .contact-section .social a i {
+        margin: 1.8rem 0 0;
     }
-     
+
 }
 
 @media only screen and (max-width: 792px) {
@@ -75,6 +82,7 @@
         font-size: 35px;
         letter-spacing: .15rem;
         line-height: 40px;
+
     }
 
     div.paragraph.w-75 {
@@ -107,9 +115,15 @@
         padding-left: 0;
     }
 
+    .project-section #btn1 {
+        padding-left: 0;
+
+    }
+
     .skill-section .experience-section {
         padding: 0;
     }
+
     .skill-section .experience-section .years-section {
         padding-left: 1%;
         width: 89%;
@@ -128,16 +142,15 @@
     .skill-section .experience-section .call-section p.para {
         margin: 0;
     }
-    .certification-section .scale {
-        transform: none;
-    }
+
     .certification-section .certificate-image img.w-75 {
-        width: 100%!important;
+        width: 100% !important;
     }
 
     .copyrights {
-        font-size: 12px ;
+        font-size: 12px;
     }
+
     footer.footer-section {
         padding: 0;
     }

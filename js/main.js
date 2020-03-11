@@ -16,6 +16,14 @@ $(document).ready(function () {
             })
 
             //$('.project-section .button-group #btn1').trigger('click'); Add this function if images with diff. size has been added
+ 
+            
+            //Hide navbar on responsive
+            $('.navbar-nav li a').on('click', function(){
+                if(!$( this ).hasClass('dropdown-toggle')){
+                    $('.navbar-collapse').collapse('hide');
+                }
+            })
 
 
             //Sticky Navegation Menu
